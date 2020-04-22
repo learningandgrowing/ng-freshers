@@ -15,7 +15,7 @@
       <input #assignment1 type="text" (input)="Myfunction(assignment1.value)" class="form-control" placeholder="Enter your text here..." aria-describedby="basic-addon1">
     </div>
     <div class="alert alert-success" *ngIf="values && values.length > 0; else noValues" role="alert">
-      {{values}}
+      <h5>Your Input: {{values}}!</h5>
     </div>
   </div>
 </div>
